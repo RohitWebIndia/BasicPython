@@ -1,0 +1,21 @@
+class Computer:
+    name="dell"
+    def __init__(self,ram,hdd):
+        self.ram=ram
+        self.hdd=hdd
+    def DefinationDetails(self):
+        print(f"Hi, Your computer configuration is given.RAM :{self.ram}, & HDD :{self.hdd}")
+
+    @classmethod
+    def classMeth(cls):
+        print("Company name is :"+cls.name)
+
+    @staticmethod
+    def price():
+        print("The price is 99k.")
+com1=Computer('DDR4-16GB',hdd='SATA-1TB')
+com1.DefinationDetails()
+com1.classMeth()
+com1.price()
+
+
